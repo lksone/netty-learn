@@ -25,6 +25,7 @@
             <version>4.11</version>
             <scope>test</scope>
         </dependency>
+        coi
 
         <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-loader-tools -->
         <dependency>
