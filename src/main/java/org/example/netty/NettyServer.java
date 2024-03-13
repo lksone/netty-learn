@@ -40,15 +40,6 @@ public class NettyServer {
                     // 配置初始化channel，也就是给worker线程配置对应的handler，当收到客户端的请求时，分配给指定的handler处理
                     .childHandler(new ChannelInitializer<SocketChannel>() {
 
-                        /**
-                         * This method will be called once the {@link Channel} was registered. After the method returns this instance
-                         * will be removed from the {@link ChannelPipeline} of the {@link Channel}.
-                         *
-                         * @param ch the {@link Channel} which was registered.
-                         * @throws Exception is thrown if an error occurs. In that case it will be handled by
-                         *                   {@link #exceptionCaught(ChannelHandlerContext, Throwable)} which will by default close
-                         *                   the {@link Channel}.
-                         */
                         @Override
                         protected void initChannel(SocketChannel ch) throws Exception {
                             ch.pipeline().addLast(new NormalMessageHandler()); //添加handler，也就是具体的IO事件处理器
