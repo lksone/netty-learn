@@ -8,7 +8,7 @@ import io.netty.channel.ChannelInboundHandlerAdapter;
 
 /**
  * @author lks
- * @description todo
+ * @description 文件传输
  * @e-mail 1056224715@qq.com
  * @date 2024/2/28 23:22
  */
